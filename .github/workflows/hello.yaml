@@ -9,9 +9,12 @@ on:
 
 # Jobs
 # Should be inside the workflow
-# jobs tells what the workflow should do
+# jobs tells what the workflow should do, there can be one or more jobs, hence we write jobs branch_protection_rule.
+# Jobs is an object so need indentation
 jobs:
+  # First Job
   say-hello:
+    # Create an Ephermal container with Ubuntu running
     runs-on: ubuntu-latest
     steps:
       - name: Say hellp to everyone
