@@ -16,6 +16,7 @@ jobs:
   say-hello:
     # Create an Ephermal container with Ubuntu running
     runs-on: ubuntu-latest
+    # That ephermal container will have steps to execute, hence name those steps and use run: run has command
     steps:
       - name: Say hellp to everyone
         run: echo "Hello Dosto"
